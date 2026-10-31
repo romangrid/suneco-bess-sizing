@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "suneco-bess-sizing"
+version = "1.0.0"
+description = "Industrial Battery Energy Storage System (BESS) & Solar Hybrid Inverter Sizing Tool for Commercial Enterprises in Ukraine"
+readme = "README.md"
+authors = [{ name = "Roman Gridasov", email = "pinnercode.ml@gmail.com" }]
+license = { text = "MIT" }
+keywords = ["bess", "solar", "photovoltaics", "energy-storage", "lifepo4", "suneco", "ukraine"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.8"
+
+[project.urls]
+"Homepage" = "https://suneco.com.ua/"
+"Documentation" = "https://suneco.com.ua/"
+"Bug Tracker" = "https://github.com/romangrid/suneco-bess-sizing/issues"
+
+[project.scripts]
+suneco-bess = "suneco_bess_sizing.cli:main"
